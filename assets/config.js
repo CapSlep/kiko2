@@ -2,13 +2,13 @@ const orderHref = window.__order_href;
 const orderOriginParam = window.__origin_param;
 
 (function (exp) {
-  const countryCode = "fr";
-  const lang = "fr-FR";
+  const countryCode = "it";
+  const lang = "it-IT";
   const locale = lang;
 
   const sizes = {
     enabled: false,
-    selectText: "Taille : ",
+    selectText: "Taglia : ",
     arr: [
       "EU 36",
       "EU 37",
@@ -42,166 +42,166 @@ const orderOriginParam = window.__origin_param;
   };
 
   const mainProduct = {
-    header: "Nouveau | Économisez 29,00 €",
-    name: "Ensemble Hydra 3D pour les lèvres Kiko Milano",
+    header: "Nuovo | Risparmia 29,00 €",
+    name: "Set Hydra 3D per le labbra Kiko Milano",
     oldPrice: "29,00 €",
     newPrice: "9,99 €",
     selectText: "",
     text: `
   
-  <b>Gloss apaisant pour les lèvres - Kiko Milano 3D Hydra Lipgloss</b>
+  <b>Gloss lenitivo per le labbra - Kiko Milano 3D Hydra Lipgloss</b>
   <br><br>
   
-  <b>Caractéristiques :</b>
+  <b>Caratteristiche:</b>
   <br>
 
-  - Texture lisse et non collante;<br>
-  - Applicateur en feutre doux pour une application facile et uniforme<br>
-  - Ne coule pas dans les crevasses et permet un tracé précis<br>
-  - Large gamme de teintes magnifiques;<br>
-  - Très durable;<br>
-  - Couches avec différents effets : transparent, brillant, nacré, fortement pigmenté ;<br>
-  - Contient un fragment de patrimoine<br>
-  - Emballage compact élégant avec le logo de l'entreprise<br>
-  - Testé dermatologiquement.<br>
+  - Texture liscia e non appiccicosa;<br>
+  - Applicatore in feltro morbido per un'applicazione facile e uniforme<br>
+  - Non si insinua nelle fessure e consente una linea precisa<br>
+  - Ampia gamma di splendidi colori;<br>
+  - Molto resistente;<br>
+  - Strati con diversi effetti: trasparente, lucido, perlato, altamente pigmentato ;<br>
+  - Contiene un frammento di patrimonio<br>
+  - Confezione compatta ed elegante con il logo dell'azienda<br>
+  - Testato dermatologicamente.<br>
   <br><br>
-  <b>Pour profiter de votre remise personnalisée, répondez à quelques questions :</b>
+  <b>Per usufruire del tuo sconto personalizzato, rispondi a qualche domanda:</b>
   `,
   };
 
   const notifications = [
     {
       user: "Mia S*****",
-      location: "Zagreb, Croatie",
-      action: "Je viens de recevoir un excellent produit pour 9,99 € !",
-      timeago: "il y a 15 secondes",
+      location: "Roma, Italia",
+      action: "Ho appena ricevuto un ottimo prodotto per 9,99 € !",
+      timeago: "15 secondi fa",
     },
     {
       user: "Ema B******",
-      location: "Split, Croatie",
-      action: "Je viens de recevoir un excellent produit pour 9,99 € !",
-      timeago: "il y a 25 secondes",
+      location: "Milano, Italia",
+      action: "Ho appena ricevuto un ottimo prodotto per 9,99 € !",
+      timeago: "25 secondi fa",
     },
   ];
 
   const reviewsArr = [
     {
       name: "Lucija",
-      time: "il y a 1 jour",
-      header: "Style !",
+      time: "1 giorno fa",
+      header: "Stile!",
       image: "./assets/r_5.jpg",
       review:
-        "Je suis amoureuse de ces gloss. Disponibles dans les teintes les plus populaires. Ils ont une texture très agréable et brillent beaucoup sur les lèvres. Je suis très satisfaite.",
+        "Amo questi gloss. Disponibili nei colori più popolari. Hanno una texture molto piacevole e brillano molto sulle labbra. Sono molto soddisfatta.",
     },
     {
       name: "Sara",
-      time: "il y a 2 jours",
-      header: "Kiko toujours super",
+      time: "2 giorni fa",
+      header: "Kiko sempre super",
       image: "./assets/r_3.jpg",
       review:
-        "Cet ensemble est vraiment cool, les gloss Kiko ont la meilleure texture, bon brillant.",
+        "Questo set è davvero fantastico, i gloss Kiko hanno la migliore texture, buon lucido.",
     },
     {
       name: "Nika",
-      time: "il y a 3 jours",
-      header: "Beau cadeau",
+      time: "3 giorni fa",
+      header: "Bel regalo",
       image: "./assets/r_4.jpg",
       review:
-        "Je l'ai commandé comme cadeau pour ma fille, elle veut des gloss Kiko depuis longtemps.",
+        "L'ho ordinato come regalo per mia figlia, desiderava da tempo i gloss Kiko.",
     },
     {
       name: "Marta",
-      time: "il y a 5 jours",
-      header: "Chapeau à la mode irrésistible !",
+      time: "5 giorni fa",
+      header: "Cappello di moda irresistibile!",
       image: "./assets/r_6.jpeg",
-      review: "Un superbe ensemble des teintes les plus populaires de gloss pour les lèvres.",
+      review: "Un meraviglioso set dei colori più popolari di gloss per le labbra.",
     },
     {
       name: "Petra",
-      time: "il y a 9 jours",
-      header: "Rien de moins que ce que j'attendais de Kiko.",
+      time: "9 giorni fa",
+      header: "Niente di meno di quello che mi aspettavo da Kiko.",
       image: "./assets/r_2.jpg",
       review:
-        "Ce n'est pas la première fois que j'achète des cosmétiques Kiko Milano, toujours de qualité supérieure.",
+        "Non è la prima volta che compro cosmetici Kiko Milano, sempre di alta qualità.",
     },
   ];
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "AVIS ET ÉVALUATIONS",
+    rr: "RECENSIONI E VALUTAZIONI",
     percent: "99%",
-    rec: "recommandez ce produit",
+    rec: "raccomandano questo prodotto",
   };
 
   const questions = {
-    _of: "Question {1} sur {2} :",
+    _of: "Domanda {1} di {2}:",
     arr: [
       {
-        q: "Avez-vous déjà utilisé des cosmétiques Kiko Milano ?",
-        a: ["Oui", "Non"],
+        q: "Hai mai usato cosmetici Kiko Milano?",
+        a: ["Sì", "No"],
       },
       {
-        q: "À quelle fréquence utilisez-vous du gloss pour les lèvres ?",
-        a: ["Tous les jours", "Seulement les jours fériés", "Cela dépend de la situation"],
+        q: "Quanto spesso usi il gloss per le labbra?",
+        a: ["Ogni giorno", "Solo nei giorni festivi", "Dipende dalla situazione"],
       },
       {
-        q: "Pour qui commandez-vous cet ensemble ?",
-        a: ["Pour moi", "Pour un ami", "Pour un membre de ma famille"],
+        q: "Per chi ordini questo set?",
+        a: ["Per me", "Per un amico", "Per un membro della famiglia"],
       },
     ],
   };
 
   const check = {
-    title: "Votre réponse sera vérifiée.",
+    title: "La tua risposta sarà verificata.",
     arr: [
-      "Vous avez répondu à la question 3/3.",
-      "Votre adresse IP ne permet pas de tirer des conclusions sur les demandes précédentes.",
-      "Votre réponse a été vérifiée.",
+      "Hai risposto alla domanda 3/3.",
+      "Il tuo indirizzo IP non permette di trarre conclusioni sulle richieste precedenti.",
+      "La tua risposta è stata verificata.",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "Félicitations, vous avez confirmé que vous êtes une personne réelle.",
+        header: "Congratulazioni, hai confermato di essere una persona reale.",
         button: "OK",
         text: `
       <center>
-      Aujourd'hui, {date}, vous avez la chance de gagner un ensemble Hydra 3D pour les lèvres Kiko Milano.
+      Oggi, {date}, hai la possibilità di vincere un set Hydra 3D per le labbra Kiko Milano.
         <br><br>
-      Tout ce que vous avez à faire est de choisir la bonne boîte-cadeau.
+      Tutto quello che devi fare è scegliere la scatola regalo giusta.
         <br><br>
-      Vous avez 3 essais, bonne chance !
+      Hai 3 tentativi, buona fortuna!
       </center>
     `,
       },
     },
     first: {
       texts: {
-        header: "Oh non...",
+        header: "Oh no...",
         button: "OK",
         text: `
       <center>
-      Malheureusement, cette boîte-cadeau est vide ! Vous avez encore 2 essais, bonne chance !
+      Sfortunatamente, questa scatola regalo è vuota! Hai ancora 2 tentativi, buona fortuna!
       </center>
     `,
       },
     },
     win: {
       texts: {
-        header: "Félicitations ! Vous avez gagné !",
+        header: "Congratulazioni! Hai vinto!",
         button: "OK",
         text: `
       <center>
         <p style="color: #000">
-        Vous avez gagné un "Ensemble Hydra 3D pour les lèvres Kiko Milano".
+        Hai vinto un "Set Hydra 3D per le labbra Kiko Milano".
         </p>
         <br>
-          1) Cliquez sur "OK" pour accéder à la page de livraison.
+          1) Clicca su "OK" per accedere alla pagina di consegna.
           <br><br>
-          2) Remplissez le formulaire et payez pour recevoir votre ensemble.
+          2) Compila il modulo e paga per ricevere il tuo set.
           <br><br>
-          3) Le colis sera livré sous 2 à 3 jours.
+          3) Il pacco sarà consegnato in 2-3 giorni.
       </center>
     `,
       },
@@ -210,16 +210,16 @@ const orderOriginParam = window.__origin_param;
 
   const cartSteps = {
     personal: {
-      title: "Informations personnelles",
+      title: "Informazioni personali",
       fields: {
         name: {
-          field: "Prénom",
+          field: "Nome",
         },
         family: {
-          field: "Nom de famille",
+          field: "Cognome",
         },
         phone: {
-          field: "Numéro de téléphone",
+          field: "Numero di telefono",
         },
         email: {
           field: "E-mail",
@@ -227,45 +227,45 @@ const orderOriginParam = window.__origin_param;
       },
     },
     delivery: {
-      title: "Livraison",
+      title: "Consegna",
       fields: {
         city: {
-          field: "Ville",
+          field: "Città",
         },
         address: {
-          field: "Adresse de livraison",
+          field: "Indirizzo di consegna",
         },
         zip: {
-          field: "Code postal",
+          field: "Codice postale",
         },
       },
     },
     payment: {
-      title: "Conditions de paiement",
-      creditCard: "Paiement en ligne par carte bancaire",
+      title: "Condizioni di pagamento",
+      creditCard: "Pagamento online con carta di credito",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Résumé de la commande",
+      title: "Riepilogo dell'ordine",
       oldPrice: "29,00 €",
       newPrice: "9,99 €",
-      size: "Taille",
+      size: "Taglia",
       subTotal: {
-        title: "Valeur de la commande",
+        title: "Valore dell'ordine",
         amount: "9,99 €",
       },
       delivery: {
-        title: "Livraison",
+        title: "Consegna",
         amount: "0,00 €",
       },
       total: {
-        title: "Total",
+        title: "Totale",
         amount: "9,99 €",
       },
-      checkoutButton: "Passez votre commande",
+      checkoutButton: "Effettua il tuo ordine",
     },
   };
 
@@ -284,9 +284,8 @@ const orderOriginParam = window.__origin_param;
   ];
 
   const footer = {
-    cr: "© 2023 Kiko Milano. Tous droits réservés.",
+    cr: "© 2023 Kiko Milano. Tutti i diritti riservati.",
   };
-
 
   const pathImgBox = {
     lid: "./assets/box-lid.png",
