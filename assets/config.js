@@ -2,13 +2,13 @@ const orderHref = window.__order_href;
 const orderOriginParam = window.__origin_param;
 
 (function (exp) {
-  const countryCode = "hr";
-  const lang = "hr-HR";
+  const countryCode = "fr";
+  const lang = "fr-FR";
   const locale = lang;
 
   const sizes = {
     enabled: false,
-    selectText: "Talla: ",
+    selectText: "Taille : ",
     arr: [
       "EU 36",
       "EU 37",
@@ -42,231 +42,230 @@ const orderOriginParam = window.__origin_param;
   };
 
   const mainProduct = {
-    header: "Novo | Uštedite 29,00 €",
-    name: "Kiko Milano Hydra 3D set za usne",
+    header: "Nouveau | Économisez 29,00 €",
+    name: "Ensemble Hydra 3D pour les lèvres Kiko Milano",
     oldPrice: "29,00 €",
     newPrice: "9,99 €",
     selectText: "",
     text: `
-    
-    
-    <b>Umirujuće sjajilo za usne - Kiko Milano 3D Hydra Lipgloss</b>
-    <br><br>
-    
-    <b>Karakteristike:</b>
-    <br>
+  
+  <b>Gloss apaisant pour les lèvres - Kiko Milano 3D Hydra Lipgloss</b>
+  <br><br>
+  
+  <b>Caractéristiques :</b>
+  <br>
 
-    - Glatka, neljepljiva konzistencija;<br>
-- Aplikator od mekanog filca omogućuje jednostavno, ravnomjerno nanošenje<br>
-- Ne klizi u pukotine i omogućuje crtanje čistih obrisa<br>
-- Bogata paleta sadrži mnogo izvrsnih nijansi;<br>
-- Vrlo izdržljiva;<br>
-- Slojevi s različitim efektima: transparentni, sjajni, sedefasti, visoko pigmentirani ;<br>
-- Sadrži fragment nasljeđa<br>
-- Elegantno kompaktno pakiranje s logotipom tvrtke<br>
-- Dermatološki testiran.<br>
-<br><br>
-<b>Kako biste iskoristili personalizirani popust, odgovorite na nekoliko pitanja:</b>
-`,
+  - Texture lisse et non collante;<br>
+  - Applicateur en feutre doux pour une application facile et uniforme<br>
+  - Ne coule pas dans les crevasses et permet un tracé précis<br>
+  - Large gamme de teintes magnifiques;<br>
+  - Très durable;<br>
+  - Couches avec différents effets : transparent, brillant, nacré, fortement pigmenté ;<br>
+  - Contient un fragment de patrimoine<br>
+  - Emballage compact élégant avec le logo de l'entreprise<br>
+  - Testé dermatologiquement.<br>
+  <br><br>
+  <b>Pour profiter de votre remise personnalisée, répondez à quelques questions :</b>
+  `,
   };
 
   const notifications = [
     {
       user: "Mia S*****",
-      location: "Zagreb, Croatia",
-      action: "Upravo sam dobio dobar proizvod za 9,99 €!",
-      timeago: "prije 15 sekundi",
+      location: "Zagreb, Croatie",
+      action: "Je viens de recevoir un excellent produit pour 9,99 € !",
+      timeago: "il y a 15 secondes",
     },
     {
-      user: "Ema  B******",
-      location: "Split, Croatia",
-      action: "Upravo sam dobio dobar proizvod za 9,99 €!",
-      timeago: "prije 25 sekundi",
+      user: "Ema B******",
+      location: "Split, Croatie",
+      action: "Je viens de recevoir un excellent produit pour 9,99 € !",
+      timeago: "il y a 25 secondes",
     },
   ];
 
   const reviewsArr = [
     {
       name: "Lucija",
-      time: "prije 1 dan",
-      header: "Stil!",
+      time: "il y a 1 jour",
+      header: "Style !",
       image: "./assets/r_5.jpg",
       review:
-        "Zaljubljena sam u ova sjajila. Dostupan u najpopularnijim nijansama. Jako su lijepe konzistencije i jako se sjaje na usnama. Jako sam zadovoljan.",
+        "Je suis amoureuse de ces gloss. Disponibles dans les teintes les plus populaires. Ils ont une texture très agréable et brillent beaucoup sur les lèvres. Je suis très satisfaite.",
     },
     {
       name: "Sara",
-      time: "Prije 2 dana",
-      header: "Kiko super kao i uvijek",
+      time: "il y a 2 jours",
+      header: "Kiko toujours super",
       image: "./assets/r_3.jpg",
       review:
-        "Ovo je jako cool set, Kiko sjajila imaju najbolju teksturu, dobar sjaj",
+        "Cet ensemble est vraiment cool, les gloss Kiko ont la meilleure texture, bon brillant.",
     },
     {
       name: "Nika",
-      time: "prije 3 dana",
-      header: "Lijep poklon",
+      time: "il y a 3 jours",
+      header: "Beau cadeau",
       image: "./assets/r_4.jpg",
       review:
-        "Ovo sam naručila kao poklon svojoj kćeri, već dugo želi Kiko sjajila za usne",
+        "Je l'ai commandé comme cadeau pour ma fille, elle veut des gloss Kiko depuis longtemps.",
     },
     {
       name: "Marta",
-      time: "prije 5 dana",
-      header: "Neodoljivo moderan šešir!",
+      time: "il y a 5 jours",
+      header: "Chapeau à la mode irrésistible !",
       image: "./assets/r_6.jpeg",
-      review: "Prekrasan set najpopularnijih nijansi sjajila za usne.",
+      review: "Un superbe ensemble des teintes les plus populaires de gloss pour les lèvres.",
     },
     {
       name: "Petra",
-      time: "prije 9 dana",
-      header: "Ništa manje nisam ni očekivao od Kika.",
+      time: "il y a 9 jours",
+      header: "Rien de moins que ce que j'attendais de Kiko.",
       image: "./assets/r_2.jpg",
       review:
-        "Ovo nije prvi put da kupujem Kiko Milano kozmetiku, uvijek vrhunske kvalitete",
+        "Ce n'est pas la première fois que j'achète des cosmétiques Kiko Milano, toujours de qualité supérieure.",
     },
   ];
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "RECENZIJE I OCJENE",
+    rr: "AVIS ET ÉVALUATIONS",
     percent: "99%",
-    rec: "preporučite ovaj proizvod",
+    rec: "recommandez ce produit",
   };
 
   const questions = {
-    _of: "Pitanje  {1} od {2}:",
+    _of: "Question {1} sur {2} :",
     arr: [
       {
-        q: "Jeste li ikada koristili Kiko Milano kozmetiku?",
-        a: ["Da", "Ne"],
+        q: "Avez-vous déjà utilisé des cosmétiques Kiko Milano ?",
+        a: ["Oui", "Non"],
       },
       {
-        q: "Koliko često koristite sjajilo za usne?",
-        a: ["Svaki dan", "Samo državni praznici", "Ovisi o situaciji"],
+        q: "À quelle fréquence utilisez-vous du gloss pour les lèvres ?",
+        a: ["Tous les jours", "Seulement les jours fériés", "Cela dépend de la situation"],
       },
       {
-        q: "Od koga naručujete komplet?",
-        a: ["Za sebe", "Za prijatelja", "Za člana moje obitelji"],
+        q: "Pour qui commandez-vous cet ensemble ?",
+        a: ["Pour moi", "Pour un ami", "Pour un membre de ma famille"],
       },
     ],
   };
 
   const check = {
-    title: "Vaš odgovor će biti provjeren.",
+    title: "Votre réponse sera vérifiée.",
     arr: [
-      "Odgovorili ste na pitanje 3/3.",
-      "Vaša IP adresa ne dopušta donošenje zaključaka o prethodnim zahtjevima.",
-      "Vaš odgovor je provjeren.",
+      "Vous avez répondu à la question 3/3.",
+      "Votre adresse IP ne permet pas de tirer des conclusions sur les demandes précédentes.",
+      "Votre réponse a été vérifiée.",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "Čestitamo, potvrdili ste da ste stvarna osoba.",
+        header: "Félicitations, vous avez confirmé que vous êtes une personne réelle.",
         button: "OK",
         text: `
-        <center>
-       Danas, {date},Imate priliku osvojiti set Kiko Milano Hydra 3D usana.
-          <br><br>
-        Sve što trebate učiniti je odabrati pravu poklon kutiju.
-          <br><br>
-     Imate 3 pokušaja, sretno!
-        </center>
-      `,
+      <center>
+      Aujourd'hui, {date}, vous avez la chance de gagner un ensemble Hydra 3D pour les lèvres Kiko Milano.
+        <br><br>
+      Tout ce que vous avez à faire est de choisir la bonne boîte-cadeau.
+        <br><br>
+      Vous avez 3 essais, bonne chance !
+      </center>
+    `,
       },
     },
     first: {
       texts: {
-        header: "O ne...",
+        header: "Oh non...",
         button: "OK",
         text: `
-        <center>
-     Nažalost, ovo darivanje je prazno! Imate još 2 pokušaja, sretno!
-        </center>
-      `,
+      <center>
+      Malheureusement, cette boîte-cadeau est vide ! Vous avez encore 2 essais, bonne chance !
+      </center>
+    `,
       },
     },
     win: {
       texts: {
-        header: "Čestitamo! Pobjedio si!",
+        header: "Félicitations ! Vous avez gagné !",
         button: "OK",
         text: `
-        <center>
-          <p style="color: #000">
-        Osvojili ste "Kiko Milano Hydra 3D set za usne
-          </p>
-          <br>
-            1) Kliknite "OK" za odlazak na stranicu za isporuku.
-            <br><br>
-            2) Ispunite obrazac i platite kako biste dobili svoj set.
-            <br><br>
-            3) Paket će biti isporučen u roku od 2 do 3 dana.
-        </center>
-      `,
+      <center>
+        <p style="color: #000">
+        Vous avez gagné un "Ensemble Hydra 3D pour les lèvres Kiko Milano".
+        </p>
+        <br>
+          1) Cliquez sur "OK" pour accéder à la page de livraison.
+          <br><br>
+          2) Remplissez le formulaire et payez pour recevoir votre ensemble.
+          <br><br>
+          3) Le colis sera livré sous 2 à 3 jours.
+      </center>
+    `,
       },
     },
   };
 
   const cartSteps = {
     personal: {
-      title: "Osobne informacije",
+      title: "Informations personnelles",
       fields: {
         name: {
-          field: "Ime",
+          field: "Prénom",
         },
         family: {
-          field: "Prezime",
+          field: "Nom de famille",
         },
         phone: {
-          field: "Broj telefona",
+          field: "Numéro de téléphone",
         },
         email: {
-          field: "E-Mail",
+          field: "E-mail",
         },
       },
     },
     delivery: {
-      title: "Distribucija",
+      title: "Livraison",
       fields: {
         city: {
-          field: "Grad",
+          field: "Ville",
         },
         address: {
-          field: "Adresa dostave",
+          field: "Adresse de livraison",
         },
         zip: {
-          field: "Poštanski brojevi",
+          field: "Code postal",
         },
       },
     },
     payment: {
-      title: "Uvjeti plaćanja",
-      creditCard: "Online plaćanje bankovnom karticom",
+      title: "Conditions de paiement",
+      creditCard: "Paiement en ligne par carte bancaire",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Sažetak narudžbe",
+      title: "Résumé de la commande",
       oldPrice: "29,00 €",
       newPrice: "9,99 €",
-      size: "Talla",
+      size: "Taille",
       subTotal: {
-        title: "Vrijednost narudžbe",
+        title: "Valeur de la commande",
         amount: "9,99 €",
       },
       delivery: {
-        title: "Distribucija",
+        title: "Livraison",
         amount: "0,00 €",
       },
       total: {
-        title: "Ukupno",
+        title: "Total",
         amount: "9,99 €",
       },
-      checkoutButton: "Platite svoju narudžbu",
+      checkoutButton: "Passez votre commande",
     },
   };
 
@@ -285,8 +284,9 @@ const orderOriginParam = window.__origin_param;
   ];
 
   const footer = {
-    cr: "© 2023 Kiko Milano. Sva prava pridržana.",
+    cr: "© 2023 Kiko Milano. Tous droits réservés.",
   };
+
 
   const pathImgBox = {
     lid: "./assets/box-lid.png",
